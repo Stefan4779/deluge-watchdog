@@ -156,13 +156,13 @@ function Hero() {
           </div>
 
           <div className="relative">
-            <div className="aspect-square w-full rounded-2xl bg-secondary shadow-2xl outline outline-1 -outline-offset-1 outline-foreground/5">
+            <div className="aspect-[3/4] w-full overflow-hidden rounded-2xl bg-secondary shadow-2xl outline outline-1 -outline-offset-1 outline-foreground/5">
               <img
-                src={productImage}
-                alt="Deluge Backwater Valve Flood Alarm device"
-                width={1024}
-                height={1024}
-                className="h-full w-full rounded-2xl object-cover"
+                src={productImage.url}
+                alt="Deluge Backwater Flood Alarm device with sensor and control unit"
+                width={800}
+                height={1067}
+                className="h-full w-full rounded-2xl object-cover object-top"
                 loading="eager"
               />
             </div>
