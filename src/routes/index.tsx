@@ -7,7 +7,7 @@ import { z } from "zod";
 import { Menu, X, CheckCircle } from "lucide-react";
 
 import { submitContact, type ContactFormData } from "@/lib/contact.functions";
-import productImage from "@/assets/product-visualization.jpg";
+import productImage from "@/assets/deluge-product.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -155,18 +155,18 @@ function Hero() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="aspect-square w-full rounded-2xl bg-secondary shadow-2xl outline outline-1 -outline-offset-1 outline-foreground/5">
+        <div className="relative pb-14">
+            <div className="aspect-[558/774] w-full overflow-hidden rounded-2xl bg-secondary shadow-2xl outline outline-1 -outline-offset-1 outline-foreground/5">
               <img
-                src={productImage}
-                alt="Deluge Backwater Valve Flood Alarm device"
-                width={1024}
-                height={1024}
+                src={productImage.url}
+                alt="Deluge Backwater Flood Alarm device with sensor and control unit"
+                width={558}
+                height={774}
                 className="h-full w-full rounded-2xl object-cover"
                 loading="eager"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-destructive p-6 text-destructive-foreground shadow-xl">
+            <div className="absolute bottom-0 left-0 bg-destructive p-6 text-destructive-foreground shadow-xl">
               <div className="mb-2 flex items-center gap-2">
                 <div className="size-2 animate-pulse rounded-full bg-white" />
                 <span className="text-[10px] font-bold uppercase tracking-widest">Real-Time Alert</span>
