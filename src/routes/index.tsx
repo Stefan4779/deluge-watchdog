@@ -7,7 +7,7 @@ import { z } from "zod";
 import { Menu, X, CheckCircle } from "lucide-react";
 
 import { submitContact, type ContactFormData } from "@/lib/contact.functions";
-import productImage from "@/assets/product-visualization.jpg";
+import productImage from "@/assets/deluge-product.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
