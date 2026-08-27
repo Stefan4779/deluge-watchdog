@@ -253,8 +253,8 @@ function ContactSection() {
           <div className="space-y-6">
             <div>
               <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Direct Line</p>
-              <a href="tel:16477991997" className="font-display text-2xl font-bold hover:text-accent">
-                1 647 799 1997
+              <a href="tel:4168162992" className="font-display text-2xl font-bold hover:text-accent">
+                416-816-2992
               </a>
             </div>
             <div>
@@ -275,7 +275,7 @@ function ContactSection() {
         </div>
 
         <div id="contact" className="bg-card p-10 ring-1 ring-foreground/5">
-          <h3 className="mb-8 font-display text-2xl font-bold tracking-tight">Contact Our Engineering Team</h3>
+          <h3 className="mb-8 font-display text-2xl font-bold tracking-tight">Contact Our Team</h3>
           <ContactForm />
         </div>
       </div>
