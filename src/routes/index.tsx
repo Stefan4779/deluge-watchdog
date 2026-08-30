@@ -80,8 +80,11 @@ function Navigation() {
           <a href="#features" className="transition-colors hover:text-accent">
             Flood Alarm
           </a>
-          <a href="#about" className="transition-colors hover:text-accent">
-            About
+          <a href="#how-it-works" className="transition-colors hover:text-accent">
+            How It Works
+          </a>
+          <a href="#professionals" className="transition-colors hover:text-accent">
+            For Plumbers
           </a>
           <a href="#contact" className="transition-colors hover:text-accent">
             Contact
