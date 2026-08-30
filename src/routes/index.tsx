@@ -8,6 +8,7 @@ import { Menu, X, CheckCircle } from "lucide-react";
 
 import { submitContact, type ContactFormData } from "@/lib/contact.functions";
 import productImage from "@/assets/deluge-product.png.asset.json";
+import logoAsset from "@/assets/deluge-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
