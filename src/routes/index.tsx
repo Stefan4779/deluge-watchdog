@@ -51,6 +51,9 @@ function Index() {
       <Navigation />
       <Hero />
       <KeyValueSection />
+      <HowItWorksSection />
+      <PlumbingProfessionalsSection />
+      <ClimateRiskSection />
       <ContactSection />
       <Footer />
     </div>
