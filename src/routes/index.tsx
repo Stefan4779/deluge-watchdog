@@ -366,8 +366,8 @@ function ClimateRiskSection() {
             <img
               src={floodedBasement.url}
               alt="Flooded modern basement interior illustrating the risk of sewer backup damage"
-              width={800}
-              height={600}
+              width={1344}
+              height={1008}
               className="h-full w-full object-cover"
               loading="lazy"
             />
