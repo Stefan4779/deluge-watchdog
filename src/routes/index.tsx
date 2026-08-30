@@ -62,11 +62,14 @@ function Navigation() {
   return (
     <nav className="sticky top-0 z-50 border-b border-foreground/5 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="/" className="flex items-center gap-2">
-          <div className="grid size-8 place-items-center rounded-sm bg-foreground">
-            <div className="size-3 border-2 border-accent" />
-          </div>
-          <span className="font-display text-xl font-bold tracking-tight">DELUGE</span>
+        <a href="/" className="flex items-center">
+          <img
+            src={logoAsset.url}
+            alt="Deluge"
+            width={140}
+            height={35}
+            className="h-8 w-auto"
+          />
         </a>
 
         <div className="hidden items-center gap-8 text-sm font-medium md:flex">
@@ -394,11 +397,14 @@ function Footer() {
   return (
     <footer className="border-t border-foreground/5 py-12">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-6 md:flex-row">
-        <a href="/" className="flex items-center gap-2">
-          <div className="grid size-6 place-items-center rounded-xs bg-foreground">
-            <div className="size-2 border border-accent" />
-          </div>
-          <span className="font-display font-bold tracking-tight">DELUGE</span>
+        <a href="/" className="flex items-center">
+          <img
+            src={logoAsset.url}
+            alt="Deluge"
+            width={112}
+            height={28}
+            className="h-6 w-auto"
+          />
         </a>
         <p className="text-xs text-muted-foreground">
           © {new Date().getFullYear()} Deluge Flood Prevention Systems. All rights reserved.
