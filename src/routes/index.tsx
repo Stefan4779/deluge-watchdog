@@ -193,26 +193,30 @@ function KeyValueSection() {
   return (
     <section id="features" className="bg-foreground py-24 text-primary-foreground">
       <div className="mx-auto max-w-7xl px-6">
+        <div className="mb-6 text-center lg:text-left">
+          <span className="mb-3 inline-block text-xs font-bold uppercase tracking-widest text-accent">Why Deluge?</span>
+          <h2 className="font-display text-3xl font-bold tracking-tight">Built for Mainline Backwater Valves</h2>
+        </div>
         <div className="mb-16 grid gap-12 lg:grid-cols-3">
           <div className="border-l border-white/10 pl-8">
             <div className="mb-6 font-display text-4xl font-bold text-accent">01</div>
-            <h3 className="mb-4 text-xl font-bold">Fail-Safe Monitoring</h3>
+            <h3 className="mb-4 text-xl font-bold">Perfect Integration</h3>
             <p className="text-sm leading-relaxed text-white/60">
-              Receive an audible alert when your Mainline Backwater Valve is closed or backed up, giving you critical seconds to react.
+              Perfectly integrates with the Mainline Fullport backwater valve for a seamless, purpose-built fit.
             </p>
           </div>
           <div className="border-l border-white/10 pl-8">
             <div className="mb-6 font-display text-4xl font-bold text-accent">02</div>
-            <h3 className="mb-4 text-xl font-bold">Smart Intervention</h3>
+            <h3 className="mb-4 text-xl font-bold">Immediate Audible Warning</h3>
             <p className="text-sm leading-relaxed text-white/60">
-              Know exactly when to stop using water in your house to prevent your own plumbing from causing structural damage during a block.
+              Loud audible sound gives the customer immediate warning of a prevented flood, day or night.
             </p>
           </div>
           <div className="border-l border-white/10 pl-8">
             <div className="mb-6 font-display text-4xl font-bold text-accent">03</div>
-            <h3 className="mb-4 text-xl font-bold">Asset Protection</h3>
+            <h3 className="mb-4 text-xl font-bold">Smart Response Prompt</h3>
             <p className="text-sm leading-relaxed text-white/60">
-              Deluge flood alarms cut basement repair costs, which often reach up to $20,000 for structural remediation and mold.
+              Prompts the customer to stop water usage and call their plumbing professional before damage escalates.
             </p>
           </div>
         </div>
@@ -231,6 +235,155 @@ function KeyValueSection() {
             <div>
               <div className="text-2xl font-bold text-accent">24/7</div>
               <div className="text-[10px] uppercase tracking-widest opacity-50">Active Monitoring</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function HowItWorksSection() {
+  return (
+    <section className="mx-auto max-w-7xl px-6 py-24">
+      <div className="mb-12 text-center">
+        <span className="mb-3 inline-block text-xs font-bold uppercase tracking-widest text-accent">How It Works</span>
+        <h2 className="font-display text-3xl font-bold tracking-tight">Three Lines of Defense</h2>
+      </div>
+      <div className="grid gap-8 md:grid-cols-3">
+        <div className="bg-card p-8 ring-1 ring-foreground/5">
+          <div className="mb-4 flex size-10 items-center justify-center bg-primary text-xs font-bold text-primary-foreground">1</div>
+          <h3 className="mb-3 font-display text-lg font-bold">Valve Closes Automatically</h3>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            In the event of a sewage drain back up, the Mainline backwater valve closes to protect the home from flooding.
+          </p>
+        </div>
+        <div className="bg-card p-8 ring-1 ring-foreground/5">
+          <div className="mb-4 flex size-10 items-center justify-center bg-primary text-xs font-bold text-primary-foreground">2</div>
+          <h3 className="mb-3 font-display text-lg font-bold">Continued Use Causes Damage</h3>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            Continued water use in the house, while the Mainline valve is closed, forces water to back up into the basement and cause damage.
+          </p>
+        </div>
+        <div className="bg-card p-8 ring-1 ring-foreground/5">
+          <div className="mb-4 flex size-10 items-center justify-center bg-primary text-xs font-bold text-primary-foreground">3</div>
+          <h3 className="mb-3 font-display text-lg font-bold">Alarm Alerts Instantly</h3>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            The Deluge flood alarm works with the Mainline valve so floods are noticed quickly, preventing damage to the household.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-16 grid items-center gap-12 lg:grid-cols-2">
+        <div>
+          <h3 className="mb-6 font-display text-2xl font-bold tracking-tight">Simple Installation</h3>
+          <ul className="space-y-4">
+            <li className="flex items-start gap-3">
+              <CheckCircle className="mt-0.5 size-5 shrink-0 text-accent" />
+              <span className="text-muted-foreground">Insert and tighten the Deluge flood alarm cap into the Mainline backwater valve.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle className="mt-0.5 size-5 shrink-0 text-accent" />
+              <span className="text-muted-foreground">Connect the Deluge flood alarm chime box to the nearest wall.</span>
+            </li>
+          </ul>
+        </div>
+        <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl bg-secondary ring-1 ring-foreground/5">
+          <img
+            src={productImage.url}
+            alt="Deluge flood alarm cap and chime box installed on a Mainline backwater valve"
+            width={800}
+            height={600}
+            className="h-full w-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function PlumbingProfessionalsSection() {
+  return (
+    <section className="bg-secondary py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="grid items-center gap-16 lg:grid-cols-2">
+          <div>
+            <span className="mb-3 inline-block text-xs font-bold uppercase tracking-widest text-accent">For Plumbing Companies</span>
+            <h2 className="mb-6 font-display text-3xl font-bold tracking-tight">Add Value to Every Installation</h2>
+            <p className="mb-8 text-muted-foreground">
+              Plumbing professionals can differentiate their services and build long-term customer trust by pairing every Mainline backwater valve with a Deluge flood alarm.
+            </p>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <CheckCircle className="mt-0.5 size-5 shrink-0 text-accent" />
+                <span className="text-muted-foreground">Generate additional revenue on every Mainline valve job.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="mt-0.5 size-5 shrink-0 text-accent" />
+                <span className="text-muted-foreground">Offer a proactive solution that reduces emergency callbacks.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="mt-0.5 size-5 shrink-0 text-accent" />
+                <span className="text-muted-foreground">Simple, fast installation with no complex wiring.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="mt-0.5 size-5 shrink-0 text-accent" />
+                <span className="text-muted-foreground">Strengthen reputation as a prevention-focused contractor.</span>
+              </li>
+            </ul>
+          </div>
+          <div className="rounded-sm border border-foreground/10 bg-background p-10 ring-1 ring-foreground/5">
+            <h3 className="mb-6 font-display text-xl font-bold">Partner With Deluge</h3>
+            <p className="mb-8 text-sm leading-relaxed text-muted-foreground">
+              We are currently partnering with plumbers, builders, and strategic homeowners who demand the highest quality in flood prevention technology.
+            </p>
+            <a
+              href="#contact"
+              className="inline-block bg-primary px-8 py-4 text-sm font-bold uppercase tracking-widest text-primary-foreground transition-transform hover:scale-105 active:scale-95"
+            >
+              Become a Partner
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ClimateRiskSection() {
+  return (
+    <section className="mx-auto max-w-7xl px-6 py-24">
+      <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="order-2 lg:order-1">
+          <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl bg-secondary ring-1 ring-foreground/5">
+            <img
+              src={floodedBasement.url}
+              alt="Flooded modern basement interior illustrating the risk of sewer backup damage"
+              width={800}
+              height={600}
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div className="order-1 lg:order-2">
+          <span className="mb-3 inline-block text-xs font-bold uppercase tracking-widest text-accent">Rising Risk</span>
+          <h2 className="mb-6 font-display text-3xl font-bold tracking-tight">Floods Are Becoming More Frequent</h2>
+          <p className="mb-6 text-muted-foreground">
+            Climate change is driving more intense rainfall and overloaded sewer systems. Basement floods from sewer backups are on the rise across North America, and a single event can cause tens of thousands of dollars in damage.
+          </p>
+          <p className="mb-8 text-muted-foreground">
+            A Deluge flood alarm is a small, one-time investment that gives homeowners and plumbing professionals early warning when a backwater valve has closed, preventing the continued water use that turns a manageable backup into a disaster.
+          </p>
+          <div className="flex flex-wrap gap-8">
+            <div>
+              <div className="font-display text-2xl font-bold text-accent">+15%</div>
+              <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Increase in urban flooding events</div>
+            </div>
+            <div>
+              <div className="font-display text-2xl font-bold text-accent">$20K+</div>
+              <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Typical repair cost</div>
             </div>
           </div>
         </div>
