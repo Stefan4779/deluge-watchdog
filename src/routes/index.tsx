@@ -311,7 +311,7 @@ function HowItWorksSection() {
 
 function PlumbingProfessionalsSection() {
   return (
-    <section className="bg-secondary py-24">
+    <section id="professionals" className="bg-secondary py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div>
