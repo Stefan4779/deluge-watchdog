@@ -70,8 +70,8 @@ function Navigation() {
           <img
             src={logoAsset.url}
             alt="Deluge"
-            width={140}
-            height={35}
+            width={110}
+            height={32}
             className="h-8 w-auto"
           />
         </a>
@@ -564,8 +564,8 @@ function Footer() {
           <img
             src={logoAsset.url}
             alt="Deluge"
-            width={112}
-            height={28}
+            width={82}
+            height={24}
             className="h-6 w-auto"
           />
         </a>
