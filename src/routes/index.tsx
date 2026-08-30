@@ -251,7 +251,7 @@ function KeyValueSection() {
 
 function HowItWorksSection() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
+    <section id="how-it-works" className="mx-auto max-w-7xl px-6 py-24">
       <div className="mb-12 text-center">
         <span className="mb-3 inline-block text-xs font-bold uppercase tracking-widest text-accent">How It Works</span>
         <h2 className="font-display text-3xl font-bold tracking-tight">Three Lines of Defense</h2>
