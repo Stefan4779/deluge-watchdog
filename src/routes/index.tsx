@@ -115,8 +115,11 @@ function Navigation() {
             <a href="#features" onClick={() => setMobileOpen(false)} className="transition-colors hover:text-accent">
               Flood Alarm
             </a>
-            <a href="#about" onClick={() => setMobileOpen(false)} className="transition-colors hover:text-accent">
-              About
+            <a href="#how-it-works" onClick={() => setMobileOpen(false)} className="transition-colors hover:text-accent">
+              How It Works
+            </a>
+            <a href="#professionals" onClick={() => setMobileOpen(false)} className="transition-colors hover:text-accent">
+              For Plumbers
             </a>
             <a href="#contact" onClick={() => setMobileOpen(false)} className="transition-colors hover:text-accent">
               Contact
