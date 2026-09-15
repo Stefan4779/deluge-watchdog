@@ -341,14 +341,24 @@ function PlumbingProfessionalsSection() {
           </div>
           <div className="rounded-sm border border-foreground/10 bg-background p-10 ring-1 ring-foreground/5">
             <h3 className="mb-6 font-display text-xl font-bold">Partner With Deluge</h3>
-            <p className="mb-8 text-sm leading-relaxed text-muted-foreground">
-              We are currently partnering with plumbers, builders, and strategic homeowners who demand the highest quality in flood prevention technology.
+            <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
+              We supply plumbing companies and builders with trade pricing and volume ordering on Deluge flood alarms, so you can stock them on every truck and quote them on every Mainline valve job.
             </p>
+            <ul className="mb-8 space-y-3 text-sm text-muted-foreground">
+              <li className="flex items-start gap-3">
+                <CheckCircle className="mt-0.5 size-4 shrink-0 text-accent" />
+                <span>Wholesale / volume pricing for trade accounts</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="mt-0.5 size-4 shrink-0 text-accent" />
+                <span>Sales support to help you pitch it to homeowners</span>
+              </li>
+            </ul>
             <a
               href="#contact"
               className="inline-block bg-primary px-8 py-4 text-sm font-bold uppercase tracking-widest text-primary-foreground transition-transform hover:scale-105 active:scale-95"
             >
-              Become a Partner
+              Request Trade Pricing
             </a>
           </div>
         </div>
