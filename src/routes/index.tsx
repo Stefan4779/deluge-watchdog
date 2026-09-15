@@ -15,12 +15,12 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Deluge | The Ultimate Solution for Flood Prevention",
+        title: "Deluge | Backwater Flood Alarms for Plumbing Professionals",
       },
       {
         name: "description",
         content:
-          "Protect your property with the Deluge Backwater Flood Alarm. Receive instant audible alerts when your Mainline Backwater Valve is closed or backed up.",
+          "Deluge Backwater Flood Alarms pair with Mainline Backwater Valves. Trade pricing for plumbers and builders — grow revenue per job and prevent costly flood callbacks.",
       },
       {
         property: "og:title",
