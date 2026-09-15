@@ -42,6 +42,7 @@ const contactSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
   lastName: z.string().min(1, "Last name is required"),
   email: z.string().email("Please enter a valid email address"),
+  role: z.string().optional(),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
@@ -452,7 +453,10 @@ function ContactSection() {
         </div>
 
         <div id="contact" className="bg-card p-10 ring-1 ring-foreground/5">
-          <h3 className="mb-8 font-display text-2xl font-bold tracking-tight">Contact Our Team</h3>
+          <h3 className="mb-3 font-display text-2xl font-bold tracking-tight">Request Trade Pricing</h3>
+          <p className="mb-8 text-sm text-muted-foreground">
+            Plumbers, builders, and homeowners — tell us who you are and we&apos;ll get you the right pricing and product details.
+          </p>
           <ContactForm />
         </div>
       </div>
@@ -538,6 +542,21 @@ function ContactForm() {
           className="border-b border-foreground/20 bg-transparent py-3 text-sm outline-none transition-colors focus:border-primary"
         />
         {errors.email && <p className="text-xs text-destructive">{errors.email.message}</p>}
+      </div>
+      <div className="flex flex-col gap-2">
+        <label htmlFor="role" className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+          I am a...
+        </label>
+        <select
+          id="role"
+          {...register("role")}
+          className="border-b border-foreground/20 bg-transparent py-3 text-sm outline-none transition-colors focus:border-primary"
+        >
+          <option value="plumber">Plumbing company / plumber</option>
+          <option value="builder">Builder / contractor</option>
+          <option value="homeowner">Homeowner</option>
+          <option value="other">Other</option>
+        </select>
       </div>
       <div className="flex flex-col gap-2">
         <label htmlFor="message" className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
