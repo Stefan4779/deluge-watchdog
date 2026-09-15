@@ -15,12 +15,12 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Deluge | The Ultimate Solution for Flood Prevention",
+        title: "Deluge | Backwater Flood Alarms for Plumbing Professionals",
       },
       {
         name: "description",
         content:
-          "Protect your property with the Deluge Backwater Flood Alarm. Receive instant audible alerts when your Mainline Backwater Valve is closed or backed up.",
+          "Deluge Backwater Flood Alarms pair with Mainline Backwater Valves. Trade pricing for plumbers and builders — grow revenue per job and prevent costly flood callbacks.",
       },
       {
         property: "og:title",
@@ -42,6 +42,7 @@ const contactSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
   lastName: z.string().min(1, "Last name is required"),
   email: z.string().email("Please enter a valid email address"),
+  role: z.string().optional(),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
@@ -50,9 +51,9 @@ function Index() {
     <div className="min-h-screen bg-background font-sans text-foreground">
       <Navigation />
       <Hero />
+      <PlumbingProfessionalsSection />
       <KeyValueSection />
       <HowItWorksSection />
-      <PlumbingProfessionalsSection />
       <ClimateRiskSection />
       <ContactSection />
       <Footer />
@@ -145,26 +146,26 @@ function Hero() {
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div>
             <span className="mb-4 inline-block border-l-2 border-destructive pl-4 text-xs font-bold uppercase tracking-widest text-destructive">
-              Technical Protection System
+              For Plumbing Professionals
             </span>
             <h1 className="mb-6 font-display text-5xl font-bold leading-[1.1] tracking-tight lg:text-7xl">
-              The Ultimate Solution for <span className="text-accent">Flood Prevention</span>
+              The Flood Alarm That <span className="text-accent">Sells Itself</span> With Every Valve You Install
             </h1>
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              Protect your property by installing a Deluge Backwater Flood Alarm on your existing Mainline Backwater Valve.
+              Offer every customer the Deluge Backwater Flood Alarm alongside their Mainline Backwater Valve — protect their property, grow your revenue per job, and cut emergency callbacks.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
                 href="#contact"
                 className="bg-primary px-8 py-4 text-sm font-bold uppercase tracking-widest text-primary-foreground transition-transform hover:scale-105 active:scale-95"
               >
-                Secure Your Home
+                Get Trade Pricing
               </a>
               <a
-                href="#features"
+                href="#professionals"
                 className="border border-foreground/20 px-8 py-4 text-sm font-bold uppercase tracking-widest transition-colors hover:bg-foreground/5"
               >
-                Technical Specs
+                Why Plumbers Choose Deluge
               </a>
             </div>
           </div>
@@ -341,14 +342,24 @@ function PlumbingProfessionalsSection() {
           </div>
           <div className="rounded-sm border border-foreground/10 bg-background p-10 ring-1 ring-foreground/5">
             <h3 className="mb-6 font-display text-xl font-bold">Partner With Deluge</h3>
-            <p className="mb-8 text-sm leading-relaxed text-muted-foreground">
-              We are currently partnering with plumbers, builders, and strategic homeowners who demand the highest quality in flood prevention technology.
+            <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
+              We supply plumbing companies and builders with trade pricing and volume ordering on Deluge flood alarms, so you can stock them on every truck and quote them on every Mainline valve job.
             </p>
+            <ul className="mb-8 space-y-3 text-sm text-muted-foreground">
+              <li className="flex items-start gap-3">
+                <CheckCircle className="mt-0.5 size-4 shrink-0 text-accent" />
+                <span>Wholesale / volume pricing for trade accounts</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="mt-0.5 size-4 shrink-0 text-accent" />
+                <span>Sales support to help you pitch it to homeowners</span>
+              </li>
+            </ul>
             <a
               href="#contact"
               className="inline-block bg-primary px-8 py-4 text-sm font-bold uppercase tracking-widest text-primary-foreground transition-transform hover:scale-105 active:scale-95"
             >
-              Become a Partner
+              Request Trade Pricing
             </a>
           </div>
         </div>
@@ -442,7 +453,10 @@ function ContactSection() {
         </div>
 
         <div id="contact" className="bg-card p-10 ring-1 ring-foreground/5">
-          <h3 className="mb-8 font-display text-2xl font-bold tracking-tight">Contact Our Team</h3>
+          <h3 className="mb-3 font-display text-2xl font-bold tracking-tight">Request Trade Pricing</h3>
+          <p className="mb-8 text-sm text-muted-foreground">
+            Plumbers, builders, and homeowners — tell us who you are and we&apos;ll get you the right pricing and product details.
+          </p>
           <ContactForm />
         </div>
       </div>
@@ -528,6 +542,21 @@ function ContactForm() {
           className="border-b border-foreground/20 bg-transparent py-3 text-sm outline-none transition-colors focus:border-primary"
         />
         {errors.email && <p className="text-xs text-destructive">{errors.email.message}</p>}
+      </div>
+      <div className="flex flex-col gap-2">
+        <label htmlFor="role" className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+          I am a...
+        </label>
+        <select
+          id="role"
+          {...register("role")}
+          className="border-b border-foreground/20 bg-transparent py-3 text-sm outline-none transition-colors focus:border-primary"
+        >
+          <option value="plumber">Plumbing company / plumber</option>
+          <option value="builder">Builder / contractor</option>
+          <option value="homeowner">Homeowner</option>
+          <option value="other">Other</option>
+        </select>
       </div>
       <div className="flex flex-col gap-2">
         <label htmlFor="message" className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
