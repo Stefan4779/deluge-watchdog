@@ -50,9 +50,9 @@ function Index() {
     <div className="min-h-screen bg-background font-sans text-foreground">
       <Navigation />
       <Hero />
+      <PlumbingProfessionalsSection />
       <KeyValueSection />
       <HowItWorksSection />
-      <PlumbingProfessionalsSection />
       <ClimateRiskSection />
       <ContactSection />
       <Footer />
@@ -145,26 +145,26 @@ function Hero() {
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div>
             <span className="mb-4 inline-block border-l-2 border-destructive pl-4 text-xs font-bold uppercase tracking-widest text-destructive">
-              Technical Protection System
+              For Plumbing Professionals
             </span>
             <h1 className="mb-6 font-display text-5xl font-bold leading-[1.1] tracking-tight lg:text-7xl">
-              The Ultimate Solution for <span className="text-accent">Flood Prevention</span>
+              The Flood Alarm That <span className="text-accent">Sells Itself</span> With Every Valve You Install
             </h1>
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              Protect your property by installing a Deluge Backwater Flood Alarm on your existing Mainline Backwater Valve.
+              Offer every customer the Deluge Backwater Flood Alarm alongside their Mainline Backwater Valve — protect their property, grow your revenue per job, and cut emergency callbacks.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
                 href="#contact"
                 className="bg-primary px-8 py-4 text-sm font-bold uppercase tracking-widest text-primary-foreground transition-transform hover:scale-105 active:scale-95"
               >
-                Secure Your Home
+                Get Trade Pricing
               </a>
               <a
-                href="#features"
+                href="#professionals"
                 className="border border-foreground/20 px-8 py-4 text-sm font-bold uppercase tracking-widest transition-colors hover:bg-foreground/5"
               >
-                Technical Specs
+                Why Plumbers Choose Deluge
               </a>
             </div>
           </div>
